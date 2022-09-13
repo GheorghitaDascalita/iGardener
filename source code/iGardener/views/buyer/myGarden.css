@@ -1,0 +1,146 @@
+html, body{
+	width: 100%;
+}
+body{
+    margin: 0 auto;
+    background-color: rgb(184 232 230);
+}
+header nav ul{
+	list-style-type: none;
+	height: 60px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(68 68 68);
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	position: fixed;
+	top: 0px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+nav ul li{
+	margin: 0px;
+	padding: 0.75em 1em;
+}
+nav ul li:last-of-type{
+	margin-left: auto;
+}
+nav a{
+	text-decoration: none;
+	color: rgb(200, 200, 200);
+}
+nav a:hover{
+	color:  white;	
+}
+nav li:nth-of-type(3) a{
+	color: white;
+}
+#logout{
+}
+#account{
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: rgba(57,155,86, 0.7);
+	font-size: 1em;
+	color:  white;
+}
+#account p, #account address{
+	margin: 10px;
+}
+#h1Center{
+	display: flex;
+	justify-content: center;
+}
+h1{
+	flex: 1 200px;
+	margin: 70px 10px 10px 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-image: linear-gradient(135deg, #399b56, #399b77, #3acc9e);
+	text-align: center;
+	color: white;
+	z-index: -1;
+	animation-name: headingAnim;
+	animation-duration: 3s;
+}
+@keyframes headingAnim{
+	from{
+		max-width: 200px;
+		opacity: 0;
+	}
+	to{
+		max-width: 100%;
+		opacity: 1;
+	}
+}
+h2{
+	margin: 10px;
+	padding: 10px;
+	background-color: rgba(57,155,86, 0.5);
+	border-radius: 5px;
+	text-align: left;
+	color: white;
+}
+#flowers{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.flowerType{
+	flex: 1 200px;
+
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	width: 100%;
+	max-width: 240px;
+	background-image: linear-gradient(135deg, #399b56, #399b77, #3acc9e);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 1em;
+}
+.flowerType:hover{
+	flex: 1.3 200px;
+	max-width: 250px;
+	box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.flowerType p, .flowerType time, .flowerType label{
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+.flowerType img{
+	padding: 0px;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 220px;
+}
+@media screen and (max-width: 600px){
+	header nav ul{
+		font-size: 13px;
+		height: 50px;
+	}
+	#flowers{
+		justify-content: center;
+	}
+	#flowerType{
+		max-width: 280px;
+		padding: 5px;
+	}
+	#flowerType:hover{
+		max-width: 290px;
+	}
+	h1{
+		margin-top: 60px;
+	}
+
+}
